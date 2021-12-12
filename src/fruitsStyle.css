@@ -1,0 +1,19 @@
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 150px;
+  height: 200px;
+  background-color: white;
+  border-radius: 20px;
+  margin: 20px;
+}
+
+.title {
+  margin-top: auto;
+}
+
+.img {
+  width: 130px;
+  height: 130px;
+}
