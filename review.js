@@ -16,3 +16,13 @@
 // export import
 // props, children
 // components
+
+// =======================
+// =======================
+
+// uchinchi dars
+// state
+// constructor
+// super
+// onChange, onClick
+// input, checkbox, select
