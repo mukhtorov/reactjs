@@ -1,7 +1,8 @@
-class Component {}
+const obj = {
+  name: 'He',
+  surname: 'Hi',
+};
 
-class Student extends Component {
-  constructor(props) {
-    super(props);
-  }
-}
+const status = 'name';
+
+console.log(obj[status]);

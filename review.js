@@ -26,3 +26,11 @@
 // super
 // onChange, onClick
 // input, checkbox, select
+
+// =======================
+// =======================
+
+// To'rtinchi dars
+// function call
+// multi state change
+// student list => add delete filter
