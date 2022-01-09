@@ -20,7 +20,6 @@ class Student extends React.Component {
     };
 
     const onFilter = (e) => {
-      // console.log(e.target.value);
       const { value } = e.target;
       let res = student.filter((item) =>
         `${item[this.state.search]}`.toLowerCase().includes(value.toLowerCase())
