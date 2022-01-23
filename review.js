@@ -42,3 +42,11 @@
 // { css }
 // props
 // function call
+
+// =======================
+// =======================
+// inheritance
+// keyframse -> animation
+// prototypes
+// project
+// theme
