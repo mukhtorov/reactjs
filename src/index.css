@@ -6,3 +6,9 @@ body {
   display: flex;
   flex-wrap: wrap;
 }
+
+.container {
+  display: flex;
+  background-color: coral;
+  color: black;
+}

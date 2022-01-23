@@ -34,3 +34,11 @@
 // function call
 // multi state change
 // student list => add delete filter
+
+// =======================
+// =======================
+// beshinchi dars
+// styled
+// { css }
+// props
+// function call
