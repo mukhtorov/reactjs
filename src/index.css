@@ -1,14 +1,5 @@
-body {
-  background-color: antiquewhite;
-}
-
-.wrapper {
-  display: flex;
-  flex-wrap: wrap;
-}
-
-.container {
-  display: flex;
-  background-color: coral;
-  color: black;
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }

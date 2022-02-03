@@ -1,11 +1,11 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import './index.css';
-import State from './state.jsx';
+import YouTube from './YouTube';
 
 ReactDOM.render(
   <React.StrictMode>
-    <State />
+    <YouTube />
   </React.StrictMode>,
   document.getElementById('root')
 );
