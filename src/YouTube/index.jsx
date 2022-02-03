@@ -14,6 +14,18 @@ export default class YouTube extends Component {
     };
   }
   render() {
+    const onFilter = (e) => {
+      console.log(e.target.value);
+      let res = data.filter((value) =>
+        value.title.toLowerCase().includes(e.target.value.toLowerCase())
+      );
+      console.log(res);
+      this.setState({ data: res });
+    };
+    const onDelete = (id) => {
+      let res = data.filter((value) => value.id !== id);
+      this.setState({ data: res });
+    };
     return (
       <Container>
         <Wrapper>
@@ -22,10 +34,10 @@ export default class YouTube extends Component {
             <Icons.Logo src={logo} alt='Logo Img' />
           </Category>
           <Category>
-            <Input placeholder='search' />
+            <Input placeholder='search' onChange={onFilter} />
             <Icons.Search />
           </Category>
-          <Category end>
+          <Category end='true'>
             <Icons.Video />
             <Icons.Menu />
             <Icons.Bell />
@@ -35,7 +47,7 @@ export default class YouTube extends Component {
 
         <Container flex>
           <Sidebar />
-          <Body data={this.state.data} />
+          <Body onDelete={onDelete} data={this.state.data} />
         </Container>
       </Container>
     );

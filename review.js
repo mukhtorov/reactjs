@@ -50,3 +50,10 @@
 // prototypes
 // project
 // theme
+
+// =======================
+// =======================
+// YouTube Clone
+// Lifting state up
+// Search movies
+// delete moveies

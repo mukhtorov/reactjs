@@ -6,11 +6,11 @@ export default class YouTube extends Component {
   render() {
     return (
       <Container>
-        {sidebar.map(({ icon, id, title, data }) => (
-          <Wrapper key={id}>
-            {title && <Title title>{title}</Title>}
-            {data.map(({ icon: Icon, title: subTitle }) => (
-              <ItemWrapper>
+        {sidebar.map(({ icon, id, title, data }, index) => (
+          <Wrapper key={index}>
+            {title && <Title title='true'>{title}</Title>}
+            {data.map(({ icon: Icon, title: subTitle }, index) => (
+              <ItemWrapper key={index}>
                 <Icon />
                 <Title>{subTitle}</Title>
               </ItemWrapper>
