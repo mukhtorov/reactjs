@@ -57,3 +57,14 @@
 // Lifting state up
 // Search movies
 // delete moveies
+
+// =======================
+// =======================
+// if()
+// ternary operator (?)
+// navbar, attr, container, Components
+
+// vazifa
+// 1 => 2ta components => signin, signup
+// 2 => UI
+// 3 => functional buttons
