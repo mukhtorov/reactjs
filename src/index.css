@@ -16,3 +16,12 @@
 .active {
   color: green;
 }
+
+.form {
+  background-color: black;
+  color: white;
+}
+
+button {
+  margin: 10px;
+}

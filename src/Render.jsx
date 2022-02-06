@@ -1,26 +1,26 @@
 import React, { Component } from 'react';
-import img1 from './assets/imgs/logo.png';
-import img2 from './assets/imgs/user.jpg';
+import Signup from './Signup';
+import Signin from './Signin';
 
 export default class Render extends Component {
   constructor(props) {
     super(props);
     this.state = {
-      list: ['All Plants', 'New Arrivals', 'Sale', 'Contact'],
-      active: 'All Plants',
+      active: false,
     };
   }
   render() {
+    const getRes = (value) => {
+      console.log(value);
+      this.setState({ active: value });
+    };
     return (
       <div className='container'>
-        {this.state.list.map((value) => (
-          <h1
-            onClick={() => this.setState({ active: value })}
-            className={`link ${this.state.active === value && 'active'}`}
-          >
-            {value}
-          </h1>
-        ))}
+        {this.state.active ? (
+          <Signin getRes={getRes} />
+        ) : (
+          <Signup getRes={getRes} />
+        )}
       </div>
     );
   }
