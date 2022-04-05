@@ -68,3 +68,8 @@
 // 1 => 2ta components => signin, signup
 // 2 => UI
 // 3 => functional buttons
+
+// =======================
+// =======================
+// ReactJS => 7 Lifecycles
+// bind => 3 ways
