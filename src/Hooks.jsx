@@ -1,37 +1,37 @@
 import React, { useState } from 'react';
 
-// const Hooks = (props) => {
-//   const [count, setCount] = useState(10);
-//   const [name, setName] = useState('webbrain');
+const Hooks = (props) => {
+  const [count, setCount] = useState(10);
+  const [name, setName] = useState('webbrain');
 
-//   const [data, setData] = useState({
-//     count: 0,
-//     name: 'webbrain',
-//   });
+  const [data, setData] = useState({
+    count: 0,
+    name: 'webbrain',
+  });
 
-//   const [product, setProduct] = useState(0);
-//   console.log(data);
-//   return (
-//     <div style={{ flex: 1 }}>
-//       <h1>Hooks Components</h1>
-//       <h1>Count: {data.count}</h1>
-//       <h1>Name: {data.name}</h1>
-//       <input
-//         type='text'
-//         value={data.name}
-//         onChange={({ target }) => setData({ ...data, name: target.value })}
-//       />
-//       <button onClick={() => setData({ ...data, count: data.count - 1 })}>
-//         -
-//       </button>
-//       <button onClick={() => setData({ ...data, count: data.count + 1 })}>
-//         +
-//       </button>
-//     </div>
-//   );
-// };
+  const [product, setProduct] = useState(0);
+  console.log(data);
+  return (
+    <div style={{ flex: 1 }}>
+      <h1>Hooks Components</h1>
+      <h1>Count: {data.count}</h1>
+      <h1>Name: {data.name}</h1>
+      <input
+        type='text'
+        value={data.name}
+        onChange={({ target }) => setData({ ...data, name: target.value })}
+      />
+      <button onClick={() => setData({ ...data, count: data.count - 1 })}>
+        -
+      </button>
+      <button onClick={() => setData({ ...data, count: data.count + 1 })}>
+        +
+      </button>
+    </div>
+  );
+};
 
-// export default Hooks;
+export default Hooks;
 
 // import React, { useState, useEffect } from 'react';
 
