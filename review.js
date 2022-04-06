@@ -73,3 +73,13 @@
 // =======================
 // ReactJS => 7 Lifecycles
 // bind => 3 ways
+
+// =======================
+// =======================
+// Class vs Hooks components
+// return vs without return hooks components
+// this in class and hooks
+// useState
+// primitive vs non primitive
+
+// useEffect
