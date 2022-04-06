@@ -1,11 +1,10 @@
 import React from 'react';
-import Hooks from './Hooks';
 
 class Class extends React.Component {
   constructor(props) {
     super(props);
     this.state = {
-      count: 12,
+      count: 0,
     };
   }
   render() {
@@ -19,7 +18,6 @@ class Class extends React.Component {
         <button onClick={() => this.setState({ count: this.state.count + 1 })}>
           +
         </button>
-        <Hooks count={this.state.count} />
       </div>
     );
   }
