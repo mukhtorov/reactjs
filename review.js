@@ -83,4 +83,14 @@
 // primitive vs non primitive
 
 // useEffect
+
 // useReducer
+
+// state management?
+// prop drilling?
+// lifting state up?
+
+// useContext
+// createContext
+// put to the store
+// useContext

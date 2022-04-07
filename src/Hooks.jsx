@@ -1,43 +1,30 @@
-import React, { useState, useEffect } from 'react';
+import React, { useContext } from 'react';
+import { StudentContext } from './context';
 
-const Hooks = (props) => {
-  const [count, setCount] = useState(props.count);
-  const [name, setName] = useState('webbrain');
+const Body = () => {
+  // const [students, setStudents] = useState();
+  const [students, setStudent] = useContext(StudentContext);
 
-  // case 1
-  useEffect(() => {
-    console.log('case 1');
-  });
-
-  // case 2
-  useEffect(() => {
-    console.log('case 2');
-  }, []);
-
-  // case 3
-  useEffect(() => {
-    setCount(props.count);
-  }, [props.count]);
-
-  // case 4
-  useEffect(() => {
-    console.log('case 4');
-  }, [name, count]);
+  const onDelete = (id) => {
+    let res = students.filter((st) => {
+      return st.id !== id;
+    });
+    setStudent(res);
+  };
 
   return (
-    <div style={{ flex: 1 }}>
-      <h1>Hooks Components</h1>
-      <h1>Count: {count}</h1>
-      <h1>Name: {name}</h1>
-      <input
-        type='text'
-        value={name}
-        onChange={({ target }) => setName(target.value)}
-      />
-      <button onClick={() => setCount(count - 1)}>-</button>
-      <button onClick={() => setCount(count + 1)}>+</button>
+    <div style={{ background: 'coral' }}>
+      <h1>Students List {students.length}</h1>
+      {students.map((student) => {
+        return (
+          <h1 key={student.id}>
+            Name: {student.name}{' '}
+            <button onClick={() => onDelete(student.id)}>delete</button>{' '}
+          </h1>
+        );
+      })}
     </div>
   );
 };
 
-export default Hooks;
+export default Body;
