@@ -1,9 +1,9 @@
-import React, { useContext } from 'react';
-import { StudentContext } from './context';
+import React from 'react';
+import { Student } from '../context/Students';
 
 const Body = () => {
   // const [students, setStudents] = useState();
-  const [students, setStudent] = useContext(StudentContext);
+  const [students, setStudent] = Student();
 
   const onDelete = (id) => {
     let res = students.filter((st) => {

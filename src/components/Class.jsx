@@ -1,5 +1,5 @@
 import React, { useContext } from 'react';
-import { StudentContext } from './context';
+import { StudentContext } from '../context/Students';
 
 const Navbar = () => {
   const [data] = useContext(StudentContext);
