@@ -130,3 +130,8 @@
 // memo vs useMome()
 // useMemo = > return value
 // useCallback vs useMemo
+
+// =======================
+// =======================
+// useRef?
+// controlled vs Uncontrolled
