@@ -1,7 +1,5 @@
 import React, { createContext, useState } from 'react';
 
-import Body from '../components/Hooks';
-
 export const StudentContext = createContext();
 
 const StudentsList = ({ children }) => {

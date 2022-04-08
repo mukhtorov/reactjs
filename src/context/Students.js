@@ -1,7 +1,5 @@
 import React, { createContext, useState, useContext } from 'react';
 
-import Body from '../components/Hooks';
-
 export const StudentContext = createContext();
 export const Student = () => useContext(StudentContext);
 

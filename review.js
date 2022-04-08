@@ -122,3 +122,11 @@
 // array, object
 // JSON.stringify(value)
 // JSON.parse(localStorage.getItem('count'))
+
+// =======================
+// =======================
+// optimization
+// memo => child component, trigger re-render
+// memo vs useMome()
+// useMemo = > return value
+// useCallback vs useMemo

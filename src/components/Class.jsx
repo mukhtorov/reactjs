@@ -1,8 +1,7 @@
-import React, { useContext } from 'react';
-import { StudentContext } from '../context/Students';
+import React, { memo } from 'react';
 
-const Navbar = () => {
-  const [data] = useContext(StudentContext);
+const Navbar = ({ data, dataCall }) => {
+  console.log('child render');
   return (
     <div
       style={{
@@ -13,13 +12,14 @@ const Navbar = () => {
         justifyContent: 'space-around',
       }}
     >
-      <h1>Students {data.length}</h1>
-      <h1>Home</h1>
-      <h1>About</h1>
-      <h1>Classes</h1>
+      <h1>{data.title}</h1>
+      <h1>{dataCall('Home').title}</h1>
+      <h1>{dataCall('About').title}</h1>
+      <h1>{dataCall('Classes').title}</h1>
+
       <h1>Contact</h1>
     </div>
   );
 };
 
-export default Navbar;
+export default memo(Navbar);
