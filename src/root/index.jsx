@@ -1,13 +1,18 @@
 import React from 'react';
+import Fetch from '../components/fetch.jsx';
+import Login from '../components/login';
+import Add from '../components/add';
+import Update from '../components/update';
 // import Navbar from '../components/Class';
-import Controlled from '../components/Controlled';
-import UnControlled from '../components/UnControlled';
+
 class Root extends React.Component {
   render() {
     return (
       <div>
-        <Controlled />
-        <UnControlled />
+        <Login />
+        <Fetch />
+        <Add />
+        <Update />
       </div>
     );
   }
