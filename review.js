@@ -145,3 +145,23 @@
 // token
 // auth => authorization
 // 200 -> 201 -> 401 -> 404 -> 415 -> 500
+
+// =======================
+// =======================
+// axios
+// fetch vs axios
+// vanilla js vs 3rd part library
+// manually vs automatic => data transform
+// npm- install whatwg-fetch --save polyfill for-fetch
+
+// =======================
+// =======================
+// React Router DOM
+// BrowserRouter
+// Navlink, Link
+// Router
+// useHistory, useLocation => window.location
+// Switch
+// usePrams
+// privateRoute
+// redirect
