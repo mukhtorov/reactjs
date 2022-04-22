@@ -10,7 +10,7 @@ export const Container = styled.div`
 `;
 
 export const Link = styled(NavLink)`
-  color: white;
+  color: ${({ active }) => (active ? 'red' : 'white')};
   font-weight: 600;
   font-size: 24px;
   text-decoration: none;
